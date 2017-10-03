@@ -29,7 +29,7 @@ public class Input {
             } else i = sentinelPos;
         }
 
-        System.out.println(wordCount);
+        //System.out.println(wordCount);
         String[] rawArray = new String[wordCount];
 
         //places words into array
@@ -38,14 +38,14 @@ public class Input {
             else wordEnd = rawInput.indexOf(separator, wordStart);
 
             rawArray[i] = rawInput.substring(wordStart, wordEnd);
-            System.out.println(rawInput.substring(wordStart, wordEnd));
+            //System.out.println(rawInput.substring(wordStart, wordEnd));
             wordStart = wordEnd + 1;
 
         }
-        System.out.println(rawArray.length);
+        //System.out.println(rawArray.length);
         return rawArray;
     }
-
+    //puts the words in alphabetical order
     public static String[] organize(String[] inputArray) {
         String[] orderedArray = inputArray;
         String temp;
